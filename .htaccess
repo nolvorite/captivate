@@ -1,0 +1,26 @@
+<IfModule mod_expires.c>
+# Enable expirations
+#<Filesmatch "\.(js)$">
+#    ExpiresActive On 
+#    ExpiresByType application/javascript "access plus 1 year"
+#</Filesmatch>
+
+</IfModule>
+#        ErrorDocument 404 http://localhost/captivate/error.php     
+        RewriteEngine On
+        RewriteRule ^thread/([-_A-Za-z0-9]+)/comment/([a-z0-9]+)/?$    index.php?thread_view=$1&comment=$2  
+        RewriteRule ^thread/([-_A-Za-z0-9]+)/comment/([a-z0-9]+)/?$    index.php?comment=$2&thread_view=$1
+        RewriteRule ^profile/([A-Za-z0-9]+)/?$    index.php?profile=$1        
+        RewriteRule ^thread/([-_A-Za-z0-9]+)/?$    index.php?thread_view=$1  
+        RewriteRule ^profile_nuise/([-_A-Za-z0-9]+)/?$    index.php?query=$1   
+        RewriteRule ^profile_nuise/([-_A-Za-z0-9]+)/notifs/?$    index.php?query=$1&notifs=all                                          
+        RewriteRule ^profile_nuise/([-_A-Za-z0-9]+)/find/([A-Za-z_-]+)/?$    index.php?query=$1&find=$2                                  
+        RewriteRule ^profile_nuise/([-_A-Za-z0-9]+)/find/([A-Za-z_-]+)/?$    index.php?find=$2&query=$1                                                     
+        RewriteRule ^profile_nuise/([-_A-Za-z0-9]+)/find/([A-Za-z_-]+)/submit    index.php?find=$2&query=$1&direct=$2_submit                               
+        RewriteRule ^images/([-_A-Za-z0-9]+)[.]([a-z]{2,7})$    images.php?src=$1&filetype=$2    
+        RewriteRule ^logout/([a-z0-9]+)/?$    index.php?direct=logout&verify=$1                                                    
+        RewriteRule ^sg/([-_A-Za-z0-9]+)/?$    index.php?snowglobe=$1  
+        RewriteRule ^signup/?$ index.php?direct=signup             
+        RewriteRule ^core/js_([A-Za-z0-9]+)[.]js$      core/js_$1.php  [E]       
+
+ 

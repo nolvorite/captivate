@@ -1,0 +1,82 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+DefaultDir=C:\wamp\www\captiv8
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+[Project tree]
+captivate
+	+all
+		-Folder43
+		+core
+			core\wikipedia_search.php
+			core\vars.php
+			core\simcheck.php
+			core\server_info_privilege_checks.php
+			core\school_listing.php
+			core\redirects.php
+			core\profile_sync.js
+			core\profile_edit.js
+			core\post_list.js
+			core\news_feed.php
+			core\nd2.php
+			core\nd1.php
+			core\light_theme.css
+			core\js_chap.php
+			core\js.php
+			core\jquery-ui.js
+			core\jquery-.js
+			core\internal.php
+			core\index_feed_js.php
+			core\idx_1.php
+			core\extra_bottom_content.php
+			core\dt_list.php
+			core\css.css
+			core\change_log.txt
+			core\auxiliary.php
+			core\autorelays.js
+			core\autoload_fnc.js
+			core\admin_panel.php
+			core\actions.php
+			core\js_core.php
+		README.md
+		index.php
+		images.php
+		error.php
+		education_copy.php
+		db.php
+		captivate.ppr
+		captiv8.sql
+		.htaccess
+[Open project files]
+0=core\wikipedia_search.php
+1=core\vars.php
+2=core\simcheck.php
+3=core\server_info_privilege_checks.php
+4=core\school_listing.php
+[Selected Project Files]
+Main=
+Selected=core\simcheck.php
+[core\wikipedia_search.php]
+TopLine=1
+Caret=1,1
+[core\vars.php]
+TopLine=1
+Caret=1,1
+[core\simcheck.php]
+TopLine=1594
+Caret=179,405
+[core\server_info_privilege_checks.php]
+TopLine=1
+Caret=1,1
+[core\school_listing.php]
+TopLine=1
+Caret=1,1
